@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>SilentLux</Authors>
+    <Company>SilentLux</Company>
+    <Product>SilentLux.AutoFixture.Moq.Xunit2</Product>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SilentLux.AutoFixture.Moq.Xunit2</PackageId>
+    <Description>Glue library that adds auto-mocking features of AutoFixture for xUnit (using Moq).</Description>
+    <PackageTags />
+    <RootNamespace>SilentLux.AutoFixture.Moq.Xunit2</RootNamespace>
+    <AssemblyName>SilentLux.AutoFixture.Moq.Xunit2</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.8.0" />
+    <PackageReference Include="AutoFixture.AutoMoq" Version="4.8.0" />
+    <PackageReference Include="AutoFixture.Xunit2" Version="4.8.0" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+</Project>
