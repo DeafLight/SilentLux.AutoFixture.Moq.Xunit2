@@ -1,4 +1,11 @@
-﻿using AutoFixture;
+﻿// Modified from
+// <a href="https://stackoverflow.com/a/38090364/1679537">
+// Nikos Baxevanis's answer on Stack Overflow
+// </a>
+// License :
+// <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+
+using AutoFixture;
 using AutoFixture.AutoMoq;
 using AutoFixture.Xunit2;
 
@@ -9,7 +16,6 @@ namespace SilentLux.AutoFixture.Moq.Xunit2
     /// into the test methods parameters.
     /// </summary>
     /// <remarks>
-    /// Source: http://blog.nikosbaxevanis.com/2012/07/31/autofixture-xunit-net-and-auto-mocking/#auto-mocking-using-moq
     /// </remarks>
     public class AutoMoqDataAttribute : AutoDataAttribute
     {
