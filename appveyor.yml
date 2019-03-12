@@ -3,9 +3,17 @@ configuration: Release
 image: Visual Studio 2017
 
 before_build:
-  - nuget restore
+  - nuget restore src
 
 deploy:
-  provider: NuGet
-  skip_symbols: true
-  artifact: /.*\.nupkg/
+  - provider: NuGet
+    api_key:
+      secure: T4yzKKKjhJ/s7uFH7BXIQi703XlYlpDUNi6gEDfSVoFxvi4DnRAVwet3dFUxvdaO
+    skip_symbols: true
+    artifact: /.*\.nupkg/
+
+build:
+  parallel: true
+  project: src/SilentLux.AutoFixture.Moq.Xunit2.sln
+  publish_nuget: true
+  verbosity: minimal
